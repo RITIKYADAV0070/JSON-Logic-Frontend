@@ -49,16 +49,20 @@ Framer Motion
 
 Vercel
 
-📁 Project Structure
+## 📁 Project Structure
+
 src/
- ├── App.jsx
- ├── main.jsx
- ├── index.css
- └── components/
+│── App.jsx
+│── main.jsx
+│── index.css
+│── components/
+│     └── (your UI components)
+│
 postcss.config.js
 vite.config.js
 .env (not committed)
 public/
+
 
 ⚙️ Environment Variables
 
