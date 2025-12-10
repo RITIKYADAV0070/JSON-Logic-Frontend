@@ -10,8 +10,6 @@ The application provides a beautifully designed UI with dark/light mode, summary
 Frontend:
 https://json-logic-frontend.vercel.app/
 
-Backend:
-https://json-logic-backend.onrender.com/
 
 # ✨ Features
 
