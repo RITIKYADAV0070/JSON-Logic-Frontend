@@ -50,6 +50,7 @@ Framer Motion
 Vercel
 
 ## 📁 Project Structure
+~~~
 
 src/
 │── App.jsx
