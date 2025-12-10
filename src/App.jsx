@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_URL ||
-  "https://json-logic-backend.onrender.com";
+  "http://localhost:8001";
 ;
 
 const EXAMPLES = [
