@@ -63,31 +63,38 @@ postcss.config.js
 vite.config.js
 .env (not committed)
 public/
+~~~
 
 
 ⚙️ Environment Variables
 
 Create a .env file in the project root:
+~~~
 
 VITE_API_URL=https://json-logic-backend.onrender.com
-
+~~~
 
 This tells the frontend which backend server to call.
 
 🚀 Running Locally
 1. Clone Repository
+~~~
 git clone https://github.com/RITIKYADAV0070/JSON-Logic-Frontend
 cd JSON-Logic-Frontend
-
+~~~
 2. Install Dependencies
+~~~
 npm install
-
+~~~
 3. Create Environment File
+~~~
 VITE_API_URL=http://localhost:8001
+~~~
 
-4. Start Development Server
+5. Start Development Server
+~~~
 npm run dev
-
+~~~
 
 The app will start at:
 
@@ -96,6 +103,7 @@ http://localhost:5173/
 📡 API Request Example
 
 The frontend sends the following request to the backend:
+~~~
 
 const API_BASE_URL = import.meta.env.VITE_API_URL;
 
@@ -103,8 +111,9 @@ const response = await axios.post(`${API_BASE_URL}/generate-rule`, {
   prompt,
   context_docs
 });
+~~~
 
-🌙 Light & Dark Mode
+# 🌙 Light & Dark Mode
 
 The UI offers both light and dark themes, with:
 
@@ -114,7 +123,7 @@ Automatic persistence using localStorage
 
 Smooth theme transitions
 
-📸 Screenshots (optional)
+# 📸 Screenshots (optional)
 
 You may add screenshots here when submitting the assignment.
 
@@ -122,22 +131,22 @@ You may add screenshots here when submitting the assignment.
 
 Steps already completed:
 
-Connect GitHub repo to Vercel
+1. Connect GitHub repo to Vercel
 
-Add environment variable in Vercel:
-
+2. Add environment variable in Vercel:
+~~~
 VITE_API_URL=https://json-logic-backend.onrender.com
+~~~
 
+3. Redeploy frontend
 
-Redeploy frontend
+4. Backend deployed on Render
 
-Backend deployed on Render
-
-CORS configured in backend
+5. CORS configured in backend
 
 This ensures full integration end-to-end.
 
-🧑‍💻 Author
+# 🧑‍💻 Author
 
 Ritik Yadav
 AI Developer Assignment – Crego
