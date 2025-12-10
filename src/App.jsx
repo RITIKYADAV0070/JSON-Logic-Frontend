@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from "react";
 
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://127.0.0.1:8001";
+  import.meta.env.VITE_API_URL ||
+  "https://json-logic-backend.onrender.com" ||
+  "http://127.0.0.1:8001";
 
 const EXAMPLES = [
   "Approve if bureau score > 700 and business vintage at least 3 years and applicant age between 25 and 60.",
