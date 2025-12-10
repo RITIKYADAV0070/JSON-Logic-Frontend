@@ -7,13 +7,13 @@ The application provides a beautifully designed UI with dark/light mode, summary
 
 # 🌐 Live Deployment
 
-# Frontend:
+Frontend:
 https://json-logic-frontend.vercel.app/
 
 Backend:
 https://json-logic-backend.onrender.com/
 
-✨ Features
+# ✨ Features
 
 Natural language → JSON Logic converter
 
@@ -35,7 +35,7 @@ Fully deployed on Vercel
 
 Environment variable–based backend URL
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 
 React (Vite)
 
