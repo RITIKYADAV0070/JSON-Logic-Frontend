@@ -1,22 +1,139 @@
+# JSON Logic Rule Generator — Frontend
 
-# JSON Logic Rule Generator – Frontend
+This is the official React-based frontend for the JSON Logic Rule Generator system.
+It allows users to enter natural-language credit policies and instantly convert them into executable JSON Logic, powered by the backend API (FastAPI + OpenRouter).
 
-This is the React + Vite + Tailwind frontend for the JSON Logic Rule Generator
-assignment (Crego, AI Developer).
+The application provides a beautifully designed UI with dark/light mode, summary and raw JSON views, embedding-based key mappings, and RAG-based policy snippet retrieval.
 
-- Beautiful dark UI with optional light mode
-- Rule Builder: prompt + context docs + examples
-- Calls FastAPI backend `/generate-rule`
-- Shows explanation, used keys, embeddings mapping and RAG snippets
-- Raw JSON tab for full payload inspection
+# 🌐 Live Deployment
 
-## Setup
+# Frontend:
+https://json-logic-frontend.vercel.app/
 
-```bash
+Backend:
+https://json-logic-backend.onrender.com/
+
+✨ Features
+
+Natural language → JSON Logic converter
+
+Example prompts for quick testing
+
+Summary view + Raw JSON view
+
+Embedding-based key mapping with similarity scores
+
+Retrieved policy snippets via lightweight RAG
+
+Light/Dark mode with persistent toggle
+
+Clean, modern, responsive UI
+
+Error handling + loading states
+
+Fully deployed on Vercel
+
+Environment variable–based backend URL
+
+🛠 Tech Stack
+
+React (Vite)
+
+TailwindCSS
+
+Axios
+
+Lucide Icons
+
+Framer Motion
+
+Vercel
+
+📁 Project Structure
+src/
+ ├── App.jsx
+ ├── main.jsx
+ ├── index.css
+ └── components/
+postcss.config.js
+vite.config.js
+.env (not committed)
+public/
+
+⚙️ Environment Variables
+
+Create a .env file in the project root:
+
+VITE_API_URL=https://json-logic-backend.onrender.com
+
+
+This tells the frontend which backend server to call.
+
+🚀 Running Locally
+1. Clone Repository
+git clone https://github.com/RITIKYADAV0070/JSON-Logic-Frontend
+cd JSON-Logic-Frontend
+
+2. Install Dependencies
 npm install
-cp .env.example .env
-# adjust VITE_API_URL if your backend is not on http://127.0.0.1:8001
-npm run dev
-```
 
-Then open the URL Vite prints (usually http://127.0.0.1:5173).
+3. Create Environment File
+VITE_API_URL=http://localhost:8001
+
+4. Start Development Server
+npm run dev
+
+
+The app will start at:
+
+http://localhost:5173/
+
+📡 API Request Example
+
+The frontend sends the following request to the backend:
+
+const API_BASE_URL = import.meta.env.VITE_API_URL;
+
+const response = await axios.post(`${API_BASE_URL}/generate-rule`, {
+  prompt,
+  context_docs
+});
+
+🌙 Light & Dark Mode
+
+The UI offers both light and dark themes, with:
+
+Theme toggle button
+
+Automatic persistence using localStorage
+
+Smooth theme transitions
+
+📸 Screenshots (optional)
+
+You may add screenshots here when submitting the assignment.
+
+🚀 Deployment on Vercel
+
+Steps already completed:
+
+Connect GitHub repo to Vercel
+
+Add environment variable in Vercel:
+
+VITE_API_URL=https://json-logic-backend.onrender.com
+
+
+Redeploy frontend
+
+Backend deployed on Render
+
+CORS configured in backend
+
+This ensures full integration end-to-end.
+
+🧑‍💻 Author
+
+Ritik Yadav
+AI Developer Assignment – Crego
+GitHub: https://github.com/RITIKYADAV0070
